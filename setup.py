@@ -32,19 +32,13 @@ readme = open('README.rst').read()
 history = open('CHANGES.rst').read()
 
 tests_require = [
-    'check-manifest>=0.25',
-    'coverage>=4.0',
     'invenio-accounts>=1.0.0b3',
     'invenio-access>=1.0.0a11',
     'invenio-rest[cors]>=1.0.0a10',
-    'isort>=4.2.2',
     'mock>=1.3.0',
     'psycopg2>=2.6.1',
-    'pydocstyle>=1.0.0',
     'pytest-cache>=1.0',
-    'pytest-cov>=1.8.0',
-    'pytest-pep8>=1.0.6',
-    'pytest>=2.8.0',
+    'pytest-invenio>=1.4.0'
 ]
 
 extras_require = {
@@ -52,7 +46,7 @@ extras_require = {
         'invenio-deposit>=1.0.0a8',
     ],
     'docs': [
-        'Sphinx>=1.5.1',
+        'Sphinx>=3',
     ],
     'tests': tests_require,
 }
